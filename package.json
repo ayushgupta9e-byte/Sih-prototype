@@ -1,0 +1,9 @@
+{
+  "name": "nhaa-14566-sih-ps93-nlp-svi-v2",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Laptop-ready SIH prototype for multimodal first-contact vulnerability screening with text/voice/both input, NLP, SVI and case updates.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NHAA 14566 | Sahayak AI — SIH PS93</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div>
+    <div class="brand">14566 <span>NHAA</span></div>
+    <div class="sub">Sahayak AI • Real-Time Vulnerability Screening Prototype</div>
+  </div>
+  <nav>
+    <button class="nav active" data-page="assessment">Assessment</button>
+    <button class="nav" data-page="dashboard">Officer Dashboard</button>
+  </nav>
+</header>
+
+<main>
+<section id="assessment" class="page active">
+  <div class="hero">
+    <div class="heroCopy">
+      <span class="badge">SIH PS93 • PROTOTYPE</span>
+      <h1>AI-Powered Real-Time<br><span>Stress & Trauma Assessment</span></h1>
+      <p>Voice + Text → NLP → SVI → Human Review</p>
+      <div class="heroPills"><span>🎙 Hindi / English</span><span>🧠 Explainable SVI</span><span>👤 Human-in-the-loop</span></div>
+    </div>
+    <div class="heroVisual">
+      <div class="orb orb1"></div><div class="orb orb2"></div>
+      <div class="aiPanel"><div class="pulseDot"></div><strong>SAHAYAK AI</strong><small>Real-time vulnerability screening</small><div class="scan"><i></i><i></i><i></i><i></i></div></div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="cardTitle"><span class="step">01</span><div><h2>Case Input</h2><p>Tell us what happened in your own words.</p></div></div>
+      <div class="row">
+        <label>Language
+          <select id="language">
+            <option>English</option><option>Hindi</option><option>Hinglish</option>
+          </select>
+        </label>
+        <label>Input mode
+          <select id="mode">
+            <option value="text">Text only</option>
+            <option value="voice">Voice only</option>
+            <option value="both">Text + Voice</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="textBox">
+        <label>Narrative / complaint</label>
+        <textarea id="narrative" placeholder="Enter the person's own words. The NLP layer extracts explainable signals and needs."></textarea>
+      </div>
+
+      <div id="voiceBox" class="voice">
+        <div class="voiceTop">
+          <button id="startVoice" class="primary">🎙 Start voice</button>
+          <button id="stopVoice" disabled>⏹ Stop</button>
+          <span id="voiceStatus">Microphone not started</span>
+        </div>
+        <div class="mini">Browser Speech Recognition converts the spoken interaction into a transcript. The prototype also records interaction timing such as duration, word pace and inferred long pauses.</div>
+        <div id="voiceTranscript" class="transcript">Voice transcript will appear here.</div>
+      </div>
+
+      <div class="consentBox">
+        <div class="consentIcon">✓</div>
+        <label><input id="consent" type="checkbox"> <span><b>Consent required before AI assessment</b><small>I consent to this prototype screening and understand that AI output is only a support flag for authorized human review.</small></span></label>
+      </div>
+      <button id="analyze" class="primary wide">Run AI Assessment <span>→</span></button>
+      <div id="error" class="error"></div>
+    </div>
+
+    <div class="card result">
+      <div class="cardTitle"><span class="step violet">02</span><div><h2>AI Assessment</h2><p>Stress Vulnerability Index & explainable signals.</p></div></div>
+      <div class="sviWrap">
+        <div id="svi" class="svi">—</div>
+        <div><div id="risk" class="risk">WAITING</div><div class="muted">SVI range: 0.00–1.00</div></div>
+      </div>
+      <div class="bar"><span id="barFill"></span></div>
+      <div id="factors" class="list muted">Run an assessment to see explainable NLP factors.</div>
+      <h3>Recommended support pathways</h3>
+      <ul id="recommendations"><li>Awaiting assessment</li></ul>
+      <div id="caseId" class="caseId"></div>
+    </div>
+  </div>
+
+  <div id="updateCard" class="card hidden">
+    <div class="sectionTitle">
+      <div><h2>3. Add missing information to the same case</h2><p class="muted">New information is appended to the existing narrative and the NLP + SVI assessment is recalculated.</p></div>
+      <span class="tag">CASE UPDATE</span>
+    </div>
+    <textarea id="addition" placeholder="Add something the person remembered later..."></textarea>
+    <div class="row">
+      <button id="addText" class="primary">Add information & re-analyze</button>
+      <button id="addVoice">🎙 Add by voice</button>
+    </div>
+    <div id="additionVoiceStatus" class="mini"></div>
+  </div>
+
+  <div id="detailCard" class="card hidden">
+    <h2>Case timeline & explainability</h2>
+    <div id="timeline"></div>
+  </div>
+</section>
+
+<section id="dashboard" class="page">
+  <div class="dashboardHead">
+    <div><span class="badge">AUTHORIZED VIEW — DEMO</span><h1>Officer Dashboard</h1><p class="muted">Prototype queue for human review. AI never makes the final decision.</p></div>
+    <button id="refresh" class="primary">Refresh cases</button>
+  </div>
+  <div id="cases"></div>
+</section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

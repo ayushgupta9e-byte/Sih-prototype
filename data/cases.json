@@ -1,0 +1,362 @@
+[
+  {
+    "caseId": "NHAA-20260928-7E1B05",
+    "createdAt": "2026-09-28T09:08:34.564Z",
+    "updatedAt": "2026-09-28T09:08:34.564Z",
+    "consent": true,
+    "language": "English",
+    "inputMode": "text",
+    "narrative": "mujhe bahut dar lag raha h",
+    "voice": null,
+    "additions": [],
+    "assessment": {
+      "svi": 0.22,
+      "risk": "LOW",
+      "inputModeDetected": "TEXT",
+      "nlp": {
+        "wordCount": 6,
+        "sentenceCount": 1,
+        "signals": {
+          "distress": {
+            "count": 2,
+            "signals": [
+              "dar",
+              "dar lag"
+            ]
+          },
+          "anxiety": {
+            "count": 0,
+            "signals": []
+          },
+          "isolation": {
+            "count": 0,
+            "signals": []
+          },
+          "safety": {
+            "count": 0,
+            "signals": []
+          },
+          "urgent": {
+            "count": 0,
+            "signals": []
+          },
+          "legal": {
+            "count": 0,
+            "signals": []
+          },
+          "support": {
+            "count": 0,
+            "signals": []
+          }
+        },
+        "entitiesAndNeeds": [
+          "counselling"
+        ],
+        "matchedSignals": [
+          {
+            "category": "distress",
+            "term": "dar"
+          },
+          {
+            "category": "distress",
+            "term": "dar lag"
+          }
+        ],
+        "nlpScore": 0.22
+      },
+      "speech": {
+        "score": 0,
+        "signals": [],
+        "paceWpm": 0
+      },
+      "explainableFactors": [
+        "distress: dar, dar lag"
+      ],
+      "recommendations": [
+        "Counselling / psychosocial support review"
+      ],
+      "humanReviewRequired": true,
+      "note": "Prototype screening only; not a clinical diagnosis. Final decisions remain with authorized human personnel."
+    },
+    "reviewStatus": "PENDING_HUMAN_REVIEW",
+    "audit": [
+      {
+        "at": "2026-09-28T09:08:34.564Z",
+        "action": "CASE_CREATED"
+      }
+    ]
+  },
+  {
+    "caseId": "NHAA-20260926-3BD3F4",
+    "createdAt": "2026-09-26T16:26:27.244Z",
+    "updatedAt": "2026-09-26T16:26:27.244Z",
+    "consent": true,
+    "language": "English",
+    "inputMode": "text",
+    "narrative": "I am very scared and worried about my safety. I have been receiving threats and I feel alone. I need help urgently.",
+    "voice": null,
+    "additions": [],
+    "assessment": {
+      "svi": 0.45,
+      "risk": "MODERATE",
+      "inputModeDetected": "TEXT",
+      "nlp": {
+        "wordCount": 22,
+        "sentenceCount": 3,
+        "signals": {
+          "distress": {
+            "count": 2,
+            "signals": [
+              "scared",
+              "worried"
+            ]
+          },
+          "anxiety": {
+            "count": 0,
+            "signals": []
+          },
+          "isolation": {
+            "count": 1,
+            "signals": [
+              "alone"
+            ]
+          },
+          "safety": {
+            "count": 1,
+            "signals": [
+              "threat"
+            ]
+          },
+          "urgent": {
+            "count": 1,
+            "signals": [
+              "urgent"
+            ]
+          },
+          "legal": {
+            "count": 0,
+            "signals": []
+          },
+          "support": {
+            "count": 1,
+            "signals": [
+              "help"
+            ]
+          }
+        },
+        "entitiesAndNeeds": [
+          "counselling",
+          "safety_review"
+        ],
+        "matchedSignals": [
+          {
+            "category": "distress",
+            "term": "scared"
+          },
+          {
+            "category": "distress",
+            "term": "worried"
+          },
+          {
+            "category": "isolation",
+            "term": "alone"
+          },
+          {
+            "category": "safety",
+            "term": "threat"
+          },
+          {
+            "category": "urgent",
+            "term": "urgent"
+          },
+          {
+            "category": "support",
+            "term": "help"
+          }
+        ],
+        "nlpScore": 0.45
+      },
+      "speech": {
+        "score": 0,
+        "signals": [],
+        "paceWpm": 0
+      },
+      "explainableFactors": [
+        "distress: scared, worried",
+        "isolation: alone",
+        "safety: threat",
+        "urgent: urgent",
+        "support: help"
+      ],
+      "recommendations": [
+        "Counselling / psychosocial support review",
+        "Safety and protection pathway review"
+      ],
+      "humanReviewRequired": true,
+      "note": "Prototype screening only; not a clinical diagnosis. Final decisions remain with authorized human personnel."
+    },
+    "reviewStatus": "PENDING_HUMAN_REVIEW",
+    "audit": [
+      {
+        "at": "2026-09-26T16:26:27.244Z",
+        "action": "CASE_CREATED"
+      }
+    ]
+  },
+  {
+    "caseId": "NHAA-20260926-7094CA",
+    "createdAt": "2026-09-26T16:24:53.493Z",
+    "updatedAt": "2026-09-26T16:25:26.518Z",
+    "consent": true,
+    "language": "English",
+    "inputMode": "both",
+    "narrative": "mujhe bahut dar lag rha hai mere sath mar pit hui h\n\nmere sath mar pit hui h",
+    "voice": null,
+    "additions": [
+      {
+        "at": "2026-09-26T16:25:26.512Z",
+        "text": "mere sath mar pit hui h",
+        "source": "text"
+      }
+    ],
+    "assessment": {
+      "svi": 0.01,
+      "risk": "LOW",
+      "inputModeDetected": "TEXT",
+      "nlp": {
+        "wordCount": 18,
+        "sentenceCount": 1,
+        "signals": {
+          "distress": {
+            "count": 0,
+            "signals": []
+          },
+          "anxiety": {
+            "count": 0,
+            "signals": []
+          },
+          "isolation": {
+            "count": 0,
+            "signals": []
+          },
+          "safety": {
+            "count": 0,
+            "signals": []
+          },
+          "urgent": {
+            "count": 0,
+            "signals": []
+          },
+          "legal": {
+            "count": 0,
+            "signals": []
+          },
+          "support": {
+            "count": 0,
+            "signals": []
+          }
+        },
+        "entitiesAndNeeds": [],
+        "matchedSignals": [],
+        "nlpScore": 0
+      },
+      "speech": {
+        "score": 0,
+        "signals": [],
+        "paceWpm": 0
+      },
+      "explainableFactors": [
+        "No strong distress/vulnerability language signal detected"
+      ],
+      "recommendations": [
+        "Standard human review"
+      ],
+      "humanReviewRequired": true,
+      "note": "Prototype screening only; not a clinical diagnosis. Final decisions remain with authorized human personnel."
+    },
+    "reviewStatus": "PENDING_HUMAN_REVIEW",
+    "audit": [
+      {
+        "at": "2026-09-26T16:24:53.493Z",
+        "action": "CASE_CREATED"
+      },
+      {
+        "at": "2026-09-26T16:25:26.518Z",
+        "action": "CASE_UPDATED_WITH_ADDITIONAL_INFORMATION"
+      }
+    ]
+  },
+  {
+    "caseId": "NHAA-20260926-37E558",
+    "createdAt": "2026-09-26T16:24:32.278Z",
+    "updatedAt": "2026-09-26T16:24:32.278Z",
+    "consent": true,
+    "language": "English",
+    "inputMode": "both",
+    "narrative": "mujhe bahut dar lag rha hai",
+    "voice": null,
+    "additions": [],
+    "assessment": {
+      "svi": 0.01,
+      "risk": "LOW",
+      "inputModeDetected": "TEXT",
+      "nlp": {
+        "wordCount": 6,
+        "sentenceCount": 1,
+        "signals": {
+          "distress": {
+            "count": 0,
+            "signals": []
+          },
+          "anxiety": {
+            "count": 0,
+            "signals": []
+          },
+          "isolation": {
+            "count": 0,
+            "signals": []
+          },
+          "safety": {
+            "count": 0,
+            "signals": []
+          },
+          "urgent": {
+            "count": 0,
+            "signals": []
+          },
+          "legal": {
+            "count": 0,
+            "signals": []
+          },
+          "support": {
+            "count": 0,
+            "signals": []
+          }
+        },
+        "entitiesAndNeeds": [],
+        "matchedSignals": [],
+        "nlpScore": 0
+      },
+      "speech": {
+        "score": 0,
+        "signals": [],
+        "paceWpm": 0
+      },
+      "explainableFactors": [
+        "No strong distress/vulnerability language signal detected"
+      ],
+      "recommendations": [
+        "Standard human review"
+      ],
+      "humanReviewRequired": true,
+      "note": "Prototype screening only; not a clinical diagnosis. Final decisions remain with authorized human personnel."
+    },
+    "reviewStatus": "PENDING_HUMAN_REVIEW",
+    "audit": [
+      {
+        "at": "2026-09-26T16:24:32.278Z",
+        "action": "CASE_CREATED"
+      }
+    ]
+  }
+]
